@@ -12,14 +12,16 @@ namespace MedicalCentreData.Models
     {
         [Key]
         public int Id { get; set; }
+        [ForeignKey("PatientsData")]
+        public int PatientId { get; set; }
+        public PatientsData patient { get; set; }
+        public string Therapy { get; set; }
+        public DateTime Date { get; set; }
         public string ClinicRemarks { get; set; }
         public string Diagnosis { get; set; }
         public string SecondDiagnosis { get; set; }
         public string ThirdDiagnosis { get; set; }
-        public string Therapy { get; set; }
-        public DateTime Date { get; set; }
-        [ForeignKey("PatientsData")]
-        public int PatientId { get; set; }
-        public PatientsData patient { get; set; }
+       
+       
     }
 }
