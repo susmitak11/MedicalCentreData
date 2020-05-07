@@ -1,7 +1,171 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+* {
+  box-sizing: border-box;
 }
 
-<div class="text-center">
- 
-</div>
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+nav li {
+  /* step 1 */
+  width: 20%; /* step 4 */
+  margin-right: -4px; /* step 5 */
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: lightsteelblue;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display:inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+
+    </style>
+</head>
+<body>
+    <!--header of the site-->
+    <div class="header">
+        <h1>Medical Cennter Data</h1>
+        <p>Assignment to Keep the record of Medical center.</p>
+    </div>
+
+    <div class="navbar">
+       
+        <!--this is the navigation bar -->
+
+            <ul class="navbar-nav flex-grow-1">
+                <li class="navbar">
+                    <a class="navbar text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                </li>
+                <li class="navbar">
+                    <a class="navbar text-dark" asp-area="" asp-controller="PatientsDatas" asp-action="Index">Patients</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar text-dark" asp-area="" asp-controller="DoctorDatas" asp-action="Index">Doctor Data</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar text-dark" asp-area="" asp-controller="Attendances" asp-action="Index"> Patients report</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar text-dark" asp-area="" asp-controller="AppointmentDatas" asp-action="Index"> Appointments </a>
+                </li>
+            </ul>
+ </div>
+  
+
+<!--These are the site layout section -->
+    <div class="row">
+        <div class="side">
+            <h2>About Me</h2>
+            <h5>Photo of me:</h5>
+            <img src="~/img/download (1).jpg" width="300" height="200">
+            <p>Head of the department.</p>
+            <h3>Hospital</h3>
+            
+
+            <img src="~/img/1587704011599.jpg" width="1200" height="600">
+
+        </div>
+        <div class="main">
+            <h2>Medical Data</h2>
+            <h5>All the data of the appointments, patients and doctors data need to be mentioned here so that it is easy to keep a record of it</h5>
+            <img src="~/img/Reception_desk_for_Clinical_Physiology_-_NÄL_hospital_1.jpg" width="1200" height="600">
+            <p>About Hospital</p>
+            <p>Our hospital is a reputed hospital that mentains all the relevant data of the clients so that it is easy to be mentained and can be seen if there is any further need of it .</p>
+            <br>
+            <h2>Mentaining data</h2>
+            <h5></h5>
+            <img src="~/img/data-governance-ss-1920.gif" width="700" height="600">
+            <p>The Record Managemant</p>
+            <p>An accurate written record detailing all aspects of patient monitoring is important, not only because it forms an integral part of the of the provision of care or nursing management of the patient, but because it also contributes to the circulation of information amongst the different teams.</p>
+        </div>
+    </div>
+    <!--this is the footer of the site-->
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+
+</body>
+</html>
+
+

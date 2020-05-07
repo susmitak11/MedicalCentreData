@@ -8,7 +8,10 @@ namespace MedicalCentreData.Models
 {
     public class PatientsData
     {
+
+        //used for the primary key in the table that is unique
         [Key]
+        //these are the fields that need to be filled while entering the patientsr data
         public int Id { get; set; }
         public string Token { get; set; }
         public string Name { get; set; }

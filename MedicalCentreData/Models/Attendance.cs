@@ -10,7 +10,9 @@ namespace MedicalCentreData.Models
 {[Authorize]
     public class Attendance
     {
+        //used for the primary key in the table that is unique
         [Key]
+        //these are the columns in the table that needs to be filled while filling the patients data
         public int Id { get; set; }
         [ForeignKey("PatientsData")]
         public int PatientId { get; set; }
