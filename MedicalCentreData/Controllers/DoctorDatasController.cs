@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MedicalCentreData.Data;
 using MedicalCentreData.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace MedicalCentreData.Controllers
 {
+    [Authorize]// this is to make it accessible to the authorize people only
     public class DoctorDatasController : Controller
     {
         private readonly ApplicationDbContext _context;

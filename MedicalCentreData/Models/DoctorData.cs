@@ -6,10 +6,11 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace MedicalCentreData.Models
-{[Authorize]
+{
+    
     public class DoctorData
     {
-
+      
         //used for the primary key in the table that is unique
         [Key]
         //these are the fields that need to be filled while entering the doctor data

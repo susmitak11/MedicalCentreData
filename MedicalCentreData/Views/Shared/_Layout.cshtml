@@ -10,11 +10,16 @@
 <body>
     <!--container of the body-->
 
+   
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
+
+
+
     <!--thias is the container-->
     <footer class="border-top footer text-muted">
         <div class="container">
@@ -25,6 +30,8 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)
+
+
 </body>
 
 </html>
@@ -43,65 +50,20 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg nav-bar navbar-light bg-light">
+        
         <div class="container">
-            
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-  
+
+
         </div>
     </nav>
 >
-    <!--This is the contact us form in the system-->
-    <div class="smoke">
-        <div class="container" id="fh5co-contact">
-            <div class="heading animate-box"><h2><b>CONTACT US</b></h2></div>
-            <div class="text-center animate-box"><h3>Medical Center Help Center</h3></div>
-            <div class="row animate-box">
-                <div class="col-md-3"></div>
-                <div class="col-md-6">
-                    <form>
-                        <div class="form-group">
-                            <label for="formGroupExampleInput">Name</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
-                        </div>
-                        <div class="form-group">
-                            <label for="formGroupExampleInput2">Email</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                            <label for="formGroupExampleInput2">Email</label>
-                            <textarea class="form-control" rows="5" placeholder="Msg Here"></textarea>
-                        </div>
-                        <button class="btn btn-banner">Send</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--this is the newsletter column in the site-->
-    <div class="signup animate-box" id="fh5co-newsletter">
-        <div class="text-center"><h2>Sign up to our newsletter for special offers</h2></div>
-        <div class="row">
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4 text-center">
-                <div class="input-group">
-                    <input type="text" class="form-control dark-bg" style="height: 40px;"
-                           placeholder="Enter your email address" aria-label="Recipient's username"
-                           aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                        <button class="btn btn-outline-secondary btn-org" style="height: 40px;" type="button">
-                            SIGN UP
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-
+   
+  
 
     <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
             integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

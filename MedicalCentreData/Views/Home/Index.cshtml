@@ -36,13 +36,18 @@ nav li {
 /* Style the top navigation bar */
 .navbar {
   overflow: hidden;
+  display:inline;
   background-color: lightsteelblue;
+}
+.ul {
+  display: inline;
 }
 
 /* Style the navigation bar links */
 .navbar a {
   float: left;
-  display:inline-block;
+  display:inline;
+  margin-right: -4px;
   color: black;
   text-align: center;
   padding: 14px 20px;
@@ -57,6 +62,7 @@ nav li {
 /* Change color on hover */
 .navbar a:hover {
   background-color: #ddd;
+  display:inline;
   color: black;
 }
 
@@ -105,35 +111,38 @@ nav li {
 <body>
     <!--header of the site-->
     <div class="header">
-        <h1>Medical Cennter Data</h1>
+        <h1>Medical Center Data</h1>
         <p>Assignment to Keep the record of Medical center.</p>
     </div>
 
     <div class="navbar">
-       
+
         <!--this is the navigation bar -->
 
-            <ul class="navbar-nav flex-grow-1">
-                <li class="navbar">
-                    <a class="navbar text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                </li>
-                <li class="navbar">
-                    <a class="navbar text-dark" asp-area="" asp-controller="PatientsDatas" asp-action="Index">Patients</a>
-                </li>
-                <li class="nav-item">
-                    <a class="navbar text-dark" asp-area="" asp-controller="DoctorDatas" asp-action="Index">Doctor Data</a>
-                </li>
-                <li class="nav-item">
-                    <a class="navbar text-dark" asp-area="" asp-controller="Attendances" asp-action="Index"> Patients report</a>
-                </li>
-                <li class="nav-item">
-                    <a class="navbar text-dark" asp-area="" asp-controller="AppointmentDatas" asp-action="Index"> Appointments </a>
-                </li>
-            </ul>
- </div>
-  
+        <ul class="navbar-nav flex-grow-1">
+            <li class="navbar">
+                <a class="navbar" asp-controller="Home" asp-action="Index">Home</a>
+            </li>
+            <li class="navbar">
+                <a class="navbar"  asp-controller="PatientsDatas" asp-action="Index">Patients</a>
+            </li>
+            <li class="navbar">
+                <a class="navbar"  asp-controller="DoctorDatas" asp-action="Index">Doctor Data</a>
+            </li>
+            <li class="navbar">
+                <a class="navbar" asp-controller="Attendances" asp-action="Index"> Patients report</a>
+            </li>
+            <li class="navbar">
+                <a class="navbar" asp-controller="AppointmentDatas" asp-action="Index"> Appointments </a>
+            </li>
+            <li>
+                <partial name="../Shared/_LoginPartial.cshtml" />
+            </li>
+        </ul>
+    </div>
 
-<!--These are the site layout section -->
+
+    <!--These are the site layout section -->
     <div class="row">
         <div class="side">
             <h2>About Me</h2>
@@ -141,7 +150,7 @@ nav li {
             <img src="~/img/download (1).jpg" width="300" height="200">
             <p>Head of the department.</p>
             <h3>Hospital</h3>
-            
+
 
             <img src="~/img/1587704011599.jpg" width="1200" height="600">
 
